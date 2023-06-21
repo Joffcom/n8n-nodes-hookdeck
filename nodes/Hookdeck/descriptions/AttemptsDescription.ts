@@ -13,9 +13,34 @@ export const attemptsOperations: INodeProperties[] = [
 			},
 		},
 		options: [
+			{
+				name: 'Get',
+				value: 'get',
+				action: 'Get an attempt',
+				description: 'Get an attempt',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '={{"/attempts/" + $parameter.attemptId }}',
+					},
+				},
+			},
 		],
 		default: 'get',
 	},
 ];
 
-export const attemptsFields: INodeProperties[] = [];
+export const attemptsFields: INodeProperties[] = [
+	{
+		displayName: 'Attempt ID',
+		name: 'attemptId',
+		type: 'string',
+		default: 'atm_123',
+		displayOptions: {
+			show: {
+				resource: ['attempts'],
+				operation: ['get'],
+			},
+		},
+	},
+];

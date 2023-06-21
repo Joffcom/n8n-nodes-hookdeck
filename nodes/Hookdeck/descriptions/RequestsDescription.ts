@@ -36,7 +36,6 @@ export const requestsFields: INodeProperties[] = [
 		name: 'requestId',
 		type: 'string',
 		default: 'req_123',
-		description: 'Request ID',
 		displayOptions: {
 			show: {
 				resource: ['requests'],
