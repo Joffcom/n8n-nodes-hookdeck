@@ -33,7 +33,7 @@ export const eventsOperations: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'PUT',
-						url: '={{"/events/" + $parameter.eventId "/mute" }}',
+						url: '={{"/events/" + $parameter.eventId + "/mute" }}',
 					},
 				},
 			},

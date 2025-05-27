@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription } from 'n8n-workflow';
+import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
 import {
 	attemptsOperations,
 	attemptsFields,
@@ -13,7 +13,7 @@ import {
 export class Hookdeck implements INodeType {
 	description : INodeTypeDescription = {
 		displayName: 'Hookdeck',
-		name: 'Hookdeck',
+		name: 'hookdeck',
 		icon: 'file:hookdeck.svg',
 		group: ['transform'],
 		version: 1,
@@ -22,8 +22,9 @@ export class Hookdeck implements INodeType {
 		defaults: {
 			name: 'Hookdeck',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		usableAsTool: true,
+		inputs: [NodeConnectionType.Main],
+		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
 				name: 'hookdeckApi',
@@ -31,7 +32,7 @@ export class Hookdeck implements INodeType {
 			},
 		],
 		requestDefaults: {
-			baseURL: 'https://api.hookdeck.com/2023-01-01',
+			baseURL: 'https://api.hookdeck.com/2025-01-01',
 			headers: {},
 		},
 		properties : [
