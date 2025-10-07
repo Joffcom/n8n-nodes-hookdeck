@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-hookdeck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "n8n community node for Hookdeck",
   "keywords": [
     "n8n-community-node-package",
@@ -12,6 +12,9 @@
   "author": {
     "name": "Jonathan",
     "email": "jonathan@joffcom.net"
+  },
+  "engines": {
+    "node": ">=20.15"
   },
   "repository": {
     "type": "git",

@@ -33,7 +33,7 @@ export class HookdeckApi implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: 'https://api.hookdeck.com',
-			url: '/2023-01-01/webhooks?limit=1',
+			url: '/2025-01-01/webhooks?limit=1',
 		},
 	};
 }
