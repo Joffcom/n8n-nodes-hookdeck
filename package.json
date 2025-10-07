@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joffcom/n8n-nodes-hookdeck"
+    "url": "git+https://github.com/joffcom/n8n-nodes-hookdeck.git"
   },
   "main": "index.js",
   "scripts": {
