@@ -37,6 +37,13 @@ export class Hookdeck implements INodeType {
 		},
 		properties : [
 			{
+				displayName:
+					'This node is deprecated and is no longer maintained. Please install and use the verified Hookdeck node (<a href="https://www.npmjs.com/package/@hookdeck/n8n-nodes-hookdeck" target="_blank">@hookdeck/n8n-nodes-hookdeck</a>) from Hookdeck instead.',
+				name: 'deprecatedNotice',
+				type: 'notice',
+				default: '',
+			},
+			{
 				displayName: 'Resource',
 				name: 'resource',
 				type: 'options',
