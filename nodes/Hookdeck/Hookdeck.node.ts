@@ -14,7 +14,7 @@ export class Hookdeck implements INodeType {
 	description : INodeTypeDescription = {
 		displayName: 'Hookdeck',
 		name: 'hookdeck',
-		icon: 'file:hookdeck.svg',
+		icon: { light: 'file:hookdeck.svg', dark: 'file:hookdeck.dark.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -50,20 +50,19 @@ export class Hookdeck implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						// eslint-disable-next-line n8n-nodes-base/node-param-resource-with-plural-option
-						name: 'Attempts',
+						name: 'Attempt',
 						value: 'attempts',
 					},
 					{
-						name: 'Events',
+						name: 'Event',
 						value: 'events',
 					},
 					{
-						name: 'Issues',
+						name: 'Issue',
 						value: 'issues',
 					},
 					{
-						name: 'Requests',
+						name: 'Request',
 						value: 'requests',
 					},
 				],

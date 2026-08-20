@@ -1,5 +1,6 @@
 import {
 	IAuthenticateGeneric,
+	Icon,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
@@ -8,6 +9,10 @@ import {
 export class HookdeckApi implements ICredentialType {
 	name = 'hookdeckApi';
 	displayName = 'Hookdeck API';
+	icon: Icon = {
+		light: 'file:../nodes/Hookdeck/hookdeck.svg',
+		dark: 'file:../nodes/Hookdeck/hookdeck.dark.svg',
+	};
 	documentationUrl = 'https://hookdeck.com/api-ref#authentication';
 	properties: INodeProperties[] = [
 		{
